@@ -192,6 +192,11 @@ kubectl get po nginx -w # watch it
 ```bash
 kubectl get po nginx -o jsonpath='{.spec.containers[].image}{"\n"}'
 ```
+Below option can be used to edit the yaml file of running pod, once the file is saved and quit the changes will effect
+
+```
+# kubectl edit pod ngnix -o yaml --save-config
+```
 
 </p>
 </details>
